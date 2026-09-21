@@ -7,4 +7,4 @@
 
 Сдаются только слабаки. И анализы (с) Джейсон Стетхем
 
-![Цитаты]("D:\pycharm_projects_d\web\web6402-korshikov_ea\stethem.jpg")
+![Цитаты]("stethem.jpg")
