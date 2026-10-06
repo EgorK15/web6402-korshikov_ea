@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    color: #222;
+}
+
+h1 {
+    color: #0b3d91;
+}
+
+#header {
+    background-color: white;
+    padding: 10px 40px;
+    overflow: hidden;
+}
+
+.logo {
+    height: 60px;
+    float: left;
+}
+
+.phone {
+    float: right;
+    margin-top: 20px;
+    color: #555;
+}
+
+#menu {
+    background-color: #0b3d91;
+    padding: 0 40px;
+}
+
+#menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+#menu a:hover {
+    background-color: #1c5bc9;
+}
+
+#menu a.active {
+    background-color: #f2a900;
+    color: #0b3d91;
+}
+
+.content {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.news {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-left: 4px solid #f2a900;
+    width: 33%;
+}
+
+.card h3 {
+    font-size: 16px;
+}
+
+.date {
+    color: #888;
+    font-size: 14px;
+}
+
+a {
+    color: #1c5bc9;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+th {
+    background-color: #0b3d91;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #e8eef9;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.note {
+    margin-top: 20px;
+    color: #555;
+}
+
+#footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 14px;
+}
