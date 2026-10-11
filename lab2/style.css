@@ -246,3 +246,7 @@ td.lab {
     margin-top: 40px;
     font-size: 14px;
 }
+
+.map {
+    border: 1px solid #ccc;
+}
