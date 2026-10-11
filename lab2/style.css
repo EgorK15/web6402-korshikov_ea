@@ -3,16 +3,43 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f7fc;
     color: #373a3c;
+    line-height: 1.5;
 }
 
 h1 {
+    position: relative;
     font-weight: normal;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
 }
 
+h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100px;
+    height: 2px;
+    background-color: #2780e3;
+}
+
+h2 {
+    font-weight: normal;
+}
+
 a {
     color: #2780e3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.crumbs {
+    background-color: #e9ecef;
+    padding: 12px 15px;
+    border-radius: 4px;
 }
 
 #top {
@@ -89,15 +116,30 @@ a {
     width: 100%;
 }
 
+.main {
+    display: flex;
+    gap: 30px;
+}
+
+.news-col {
+    width: 66%;
+}
+
+.ads-col {
+    width: 34%;
+}
+
 .news {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .card {
+    box-sizing: border-box;
     background-color: white;
     padding: 15px;
-    width: 33%;
+    width: calc(50% - 10px);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -119,6 +161,20 @@ a {
 
 .card h3 a:hover {
     color: #2780e3;
+}
+
+.ad {
+    background-color: white;
+    border-top: 4px solid #2780e3;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.ad a {
+    display: block;
+    margin-top: 5px;
+    color: #373a3c;
 }
 
 .date {
@@ -273,9 +329,54 @@ td.lab {
 #footer {
     background-color: #dee2ea;
     color: #6f767c;
-    text-align: center;
-    padding: 10px;
+    padding: 30px 40px;
     margin-top: 40px;
+}
+
+#footer .logo {
+    float: none;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin: 15px 40px 0 0;
+    color: #6f767c;
+}
+
+#footer h2 {
+    color: #373a3c;
+    border-bottom: 1px solid rgba(39, 128, 227, 0.6);
+    padding-bottom: 5px;
+}
+
+.footer-contacts {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-contacts div {
+    width: 25%;
+}
+
+.footer-contacts h3 {
+    color: #373a3c;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.footer-contacts p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-contacts a {
+    color: #6f767c;
+}
+
+#bottom {
+    background-color: #0d47a1;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 15px 40px;
     font-size: 14px;
 }
 
