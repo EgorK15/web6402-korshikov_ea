@@ -133,3 +133,43 @@ tr:nth-child(even) {
 .square {
     list-style-type: square;
 }
+
+.card img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item {
+    background-color: white;
+    width: 195px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+    width: 180px;
+    height: 120px;
+}
+
+.item a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
+
+.item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
