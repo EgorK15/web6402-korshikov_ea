@@ -129,3 +129,7 @@ tr:nth-child(even) {
     margin-top: 40px;
     font-size: 14px;
 }
+
+.square {
+    list-style-type: square;
+}
