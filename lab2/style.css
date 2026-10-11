@@ -15,6 +15,23 @@ a {
     color: #2780e3;
 }
 
+#top {
+    background-color: #0d47a1;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 15px 40px;
+    font-size: 14px;
+}
+
+#top a {
+    float: right;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+#top a:hover {
+    color: white;
+}
+
 #header {
     background-color: #2780e3;
     padding: 15px 40px;
@@ -26,11 +43,7 @@ a {
     float: left;
 }
 
-.phone {
-    float: right;
-    margin-top: 10px;
-    color: rgba(255, 255, 255, 0.7);
-}
+
 
 #menu {
     background-color: #2780e3;
