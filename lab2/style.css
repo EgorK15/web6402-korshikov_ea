@@ -112,6 +112,15 @@ a {
     font-weight: normal;
 }
 
+.card h3 a {
+    color: #373a3c;
+    text-decoration: none;
+}
+
+.card h3 a:hover {
+    color: #2780e3;
+}
+
 .date {
     color: #868e96;
     font-size: 13px;
