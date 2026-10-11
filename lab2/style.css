@@ -43,6 +43,15 @@ a {
     float: left;
 }
 
+.caption {
+    float: left;
+    margin: 3px 0 0 30px;
+    padding-left: 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 
 
 #menu {
