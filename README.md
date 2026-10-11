@@ -16,6 +16,6 @@
 Страницы лежат в папке `lab2`:
 - `index.html` - главная с новостями
 - `institutes.html` - институты и факультеты
-- `schedule.html` - расписание звонков
+- `schedule.html` - расписание группы
 - `contacts.html` - контакты
 - `style.css` - стили
