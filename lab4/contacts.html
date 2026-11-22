@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Контакты</title>
     <link rel="stylesheet" href="style.css">
+    <script src="contacts.js" defer></script>
 </head>
 <body>
     <div id="top">
@@ -21,13 +22,12 @@
         <a href="institutes.html" class="menu__link">Институты</a>
         <a href="schedule.html" class="menu__link">Расписание</a>
         <a href="contacts.html" class="menu__link menu__link_active" aria-current="page">Контакты</a>
-        <a href="excursion.html" class="menu__link">Экскурсия</a>
     </nav>
 
     <div class="content">
         <p class="crumbs"><a href="index.html">Главная</a> / Контакты</p>
         <h1>Контакты</h1>
-        <p><a href="excursion.html">Записаться на экскурсию по кампусу</a></p>
+        <p><a href="#question">Задать вопрос приёмной комиссии</a></p>
         <ul>
             <li><a href="https://ssau.ru/info/contacts/continfo/">Телефонный справочник</a></li>
             <li><a href="https://ssau.ru/info/struct/adm/">Руководство</a></li>
@@ -61,6 +61,29 @@
                 </ul>
             </li>
         </ul>
+
+        <h2 id="question">Задать вопрос приёмной комиссии</h2>
+        <p>Учебная форма. Для проверки используйте вымышленные данные.</p>
+        <form class="contact-form" action="questions" method="post">
+            <label class="contact-form__label">
+                Имя
+                <input class="contact-form__input" type="text" name="name" maxlength="80" required>
+            </label>
+            <label class="contact-form__label">
+                Электронная почта
+                <input class="contact-form__input" type="email" name="email" maxlength="120" required>
+            </label>
+            <label class="contact-form__label">
+                Вопрос
+                <textarea class="contact-form__input" name="question" rows="4" maxlength="500" required></textarea>
+            </label>
+            <label class="contact-form__label">
+                <input type="checkbox" name="applicant">
+                Я абитуриент
+            </label>
+            <button class="contact-form__button" type="submit">Отправить вопрос</button>
+            <p class="contact-form__status" role="status"></p>
+        </form>
 
         <p><a href="https://ssau.ru/info/studcity/">Схема кампуса университета</a></p>
         <p><a href="https://yandex.ru/maps/?pt=50.1767,53.2119&amp;z=16&amp;l=map"><img src="img/map.png" alt="Карта" class="map"></a></p>

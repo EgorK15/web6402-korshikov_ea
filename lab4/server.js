@@ -13,7 +13,7 @@ const contentTypes = new Map([
 
 const files = new Map([
     ['/', 'index.html'],
-    ...['index.html', 'institutes.html', 'schedule.html', 'contacts.html', 'excursion.html', 'style.css', 'excursion.js']
+    ...['index.html', 'institutes.html', 'schedule.html', 'contacts.html', 'style.css', 'contacts.js']
         .map((file) => ['/' + file, file]),
 ]);
 
@@ -26,7 +26,7 @@ for (const directory of ['img', 'img/inst']) {
     }
 }
 
-async function receiveApplication(req, res) {
+async function receiveQuestion(req, res) {
     let body = '';
     req.setEncoding('utf8');
 
@@ -39,12 +39,12 @@ async function receiveApplication(req, res) {
     }
 
     try {
-        const {name, email, date, consultation} = JSON.parse(body);
+        const {name, email, question, applicant} = JSON.parse(body);
         if (
             typeof name !== 'string' || !name.trim() ||
             typeof email !== 'string' || !email.includes('@') ||
-            typeof date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(date) ||
-            typeof consultation !== 'boolean'
+            typeof question !== 'string' || !question.trim() ||
+            typeof applicant !== 'boolean'
         ) {
             res.writeHead(400).end();
             return;
@@ -57,9 +57,9 @@ async function receiveApplication(req, res) {
 
 const server = http.createServer(async (req, res) => {
     const url = req.url.split('?')[0];
-    if (req.method === 'POST' && url === '/applications') {
+    if (req.method === 'POST' && url === '/questions') {
         try {
-            await receiveApplication(req, res);
+            await receiveQuestion(req, res);
         } catch {
             res.writeHead(400).end();
         }
@@ -82,6 +82,8 @@ const server = http.createServer(async (req, res) => {
     });
 });
 
-server.listen(3000, '127.0.0.1', () => {
-    console.log('http://127.0.0.1:3000/');
+const port = Number(process.argv[2] ?? 3000);
+
+server.listen(port, '127.0.0.1', () => {
+    console.log(`http://127.0.0.1:${server.address().port}/`);
 });

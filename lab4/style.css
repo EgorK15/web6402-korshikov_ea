@@ -448,7 +448,7 @@ td.lab {
     min-width: 760px;
 }
 
-.excursion-form {
+.contact-form {
     box-sizing: border-box;
     max-width: 560px;
     padding: 20px;
@@ -457,12 +457,12 @@ td.lab {
     box-shadow: 0 1px 4px var(--card-shadow);
 }
 
-.excursion-form__label {
+.contact-form__label {
     display: block;
     margin-bottom: 15px;
 }
 
-.excursion-form__input {
+.contact-form__input {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -475,7 +475,11 @@ td.lab {
     border-radius: 4px;
 }
 
-.excursion-form__button {
+textarea.contact-form__input {
+    resize: vertical;
+}
+
+.contact-form__button {
     padding: 10px 16px;
     font: inherit;
     color: var(--white);
@@ -485,12 +489,12 @@ td.lab {
     cursor: pointer;
 }
 
-.excursion-form__button:disabled {
+.contact-form__button:disabled {
     opacity: 0.65;
     cursor: wait;
 }
 
-.excursion-form__status {
+.contact-form__status {
     margin: 10px 0 0;
 }
 
