@@ -58,3 +58,6 @@ form.addEventListener('submit', async (event) => {
         button.disabled = false;
     }
 });
+
+button.disabled = false;
+statusMessage.textContent = '';
