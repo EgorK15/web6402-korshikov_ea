@@ -148,16 +148,18 @@ a:hover {
 }
 
 .banner_animated {
-    animation: banner-appear 0.7s ease-out;
+    animation: banner-appear 1.2s ease-in-out;
 }
 
 @keyframes banner-appear {
     from {
-        opacity: 0.4;
-        transform: translateY(8px);
+        opacity: 0.25;
+        clip-path: inset(8% 12% round 18px);
+        transform: translateY(28px);
     }
     to {
         opacity: 1;
+        clip-path: inset(0 round 0);
         transform: translateY(0);
     }
 }

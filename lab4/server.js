@@ -50,7 +50,7 @@ async function receiveQuestion(req, res) {
             return;
         }
         res.writeHead(204).end();
-        console.log('Вопрос принят');
+        console.log('Вопрос принят', {name, email, question, applicant});
     } catch {
         res.writeHead(400).end();
     }
